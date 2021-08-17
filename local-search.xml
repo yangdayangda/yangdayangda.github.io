@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2021/08/17/java%E5%9F%BA%E7%A1%80/"/>
+    <url>/2021/08/17/java%E5%9F%BA%E7%A1%80/</url>
+    
+    <content type="html"><![CDATA[<h3 id="BigInteger和BigDecimal"><a href="#BigInteger和BigDecimal" class="headerlink" title="BigInteger和BigDecimal"></a>BigInteger和BigDecimal</h3><p>BigInteger用的整形的数组来保存的这个大数，所以可以保存很大数字。用signum标识位来表示正负号。</p><p>由于mag数组不需要存储负数所以一个integer32位它的存储范围为2^32-1</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210807170956569.png" alt="image-20210807170956569"></p><p>BigDecimal使用bigInteger保存整数部分，int类型的scale保存小数部分，所以精度很高。</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210807171326451.png" alt="image-20210807171326451"></p><h3 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h3><p>默认大小10；</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210807225109574.png" alt="image-20210807225109574"></p><p>每次增长1.5倍</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210807225342256.png" alt="image-20210807225342256"></p><h3 id="Vector"><a href="#Vector" class="headerlink" title="Vector"></a>Vector</h3><p>默认容量10，如果指定增长因子每次就增长那么多，不指定就扩大一倍。</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210808085935627.png" alt="image-20210808085935627"></p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210808090204392.png" alt="image-20210808090204392"></p><p>线程安全的</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210808090411637.png" alt="image-20210808090411637"></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>my-first-blog</title>
     <link href="/2021/08/17/my-first-blog/"/>
     <url>/2021/08/17/my-first-blog/</url>
