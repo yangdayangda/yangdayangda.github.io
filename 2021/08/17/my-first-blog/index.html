@@ -18,9 +18,25 @@
   <meta name="author" content="yangda">
   <meta name="keywords" content="">
   
-  <title>Archives - yangda&#39;s blog</title>
+  <title>my-first-blog - yangda&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -48,7 +64,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -147,9 +163,46 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Archive">
+            <span class="h2" id="subtitle" title="my-first-blog">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-08-17 18:20" pubdate>
+        August 17, 2021 pm
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      149 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      2
+       分钟
+    </span>
+  
+
+  
+  
+</div>
 
             
           </div>
@@ -162,58 +215,87 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">4 posts in total.</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2021</p>
-    
-    <a href="/2021/08/17/java%E5%9F%BA%E7%A1%80/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">text</span>
-      <time style="float: right;">08-17</time>
-    </a>
-  
-    
-    <a href="/2021/08/17/index/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">text</span>
-      <time style="float: right;">08-17</time>
-    </a>
-  
-    
-    <a href="/2021/08/17/my-first-blog/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">my-first-blog</span>
-      <time style="float: right;">08-17</time>
-    </a>
-  
-    
-    <a href="/2021/08/17/hello-world/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Hello World</span>
-      <time style="float: right;">08-17</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">my-first-blog</h1>
+            
+            <div class="markdown-body">
+              <p>1.在node官网下载安装包：<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/%EF%BC%8C%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9C%A8%E5%AE%89%E8%A3%85%E4%B8%8B%E8%BD%BDnodejs%E6%97%B6%EF%BC%8C%E4%B8%8B%E8%BD%BDarmv8%E7%9A%84%E5%8C%85">https://nodejs.org/zh-cn/download/，华为云在安装下载nodejs时，下载armv8的包</a><br><img src="https://upload-images.jianshu.io/upload_images/24832719-51e2e4637999ff2f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" lazyload><br>2.上传到自己的linux系统里面。<br>3.把安装包移动到/usr/local解压，并且改名，删除安装包。</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">mv</span> node-v<span class="hljs-number">14</span>.<span class="hljs-number">17</span>.<span class="hljs-number">0</span>-linux-arm<span class="hljs-number">64</span>.tar.xz /usr/loca<br><span class="hljs-attribute">cd</span> /usr/local<br><span class="hljs-attribute">tar</span> -xvf node-v<span class="hljs-number">14</span>.<span class="hljs-number">17</span>.<span class="hljs-number">0</span>-linux-arm<span class="hljs-number">64</span>.tar.xz<br><span class="hljs-attribute">mv</span> node-v<span class="hljs-number">14</span>.<span class="hljs-number">17</span>.<span class="hljs-number">0</span>-linux-arm<span class="hljs-number">64</span> nodejs //改名<br><span class="hljs-attribute">rm</span> -rf node-v<span class="hljs-number">14</span>.<span class="hljs-number">17</span>.<span class="hljs-number">0</span>-linux-arm<span class="hljs-number">64</span>.tar.xz //删除安装包<br></code></pre></td></tr></table></figure>
+<p>4.让npm和node命令全局生效</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs awk">ln -s <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/nodejs/</span>bin<span class="hljs-regexp">/npm /u</span>sr<span class="hljs-regexp">/local/</span>bin/<br>ln -s <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/nodejs/</span>bin<span class="hljs-regexp">/node /u</span>sr<span class="hljs-regexp">/local/</span>bin/<br></code></pre></td></tr></table></figure>
+<p>5.查看是否成功</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">-v</span><br>npm -v<br></code></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/24832719-0a593aef4d8e147a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" lazyload></p>
 
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/08/17/index/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">text</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/08/17/hello-world/">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -293,9 +375,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
 
 
 

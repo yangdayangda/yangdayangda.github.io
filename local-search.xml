@@ -5,6 +5,19 @@
   
   <entry>
     <title>text</title>
+    <link href="/2021/08/17/java%E5%9F%BA%E7%A1%80/"/>
+    <url>/2021/08/17/java%E5%9F%BA%E7%A1%80/</url>
+    
+    <content type="html"><![CDATA[<p>BigInteger和BigDecimal</p><p>BigInteger用的整形的数组来保存的这个大数，所以可以保存很大数字。用signum标识位来表示正负号。</p><p>由于mag数组不需要存储负数所以一个integer32位它的存储范围为2^32-1</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210807170956569.png" alt="image-20210807170956569"></p><p>BigDecimal使用bigInteger保存整数部分，int类型的scale保存小数部分，所以精度很高。</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210807171326451.png" alt="image-20210807171326451"></p><h3 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h3><p>默认大小10；</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210807225109574.png" alt="image-20210807225109574"></p><p>每次增长1.5倍</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210807225342256.png" alt="image-20210807225342256"></p><h3 id="Vector"><a href="#Vector" class="headerlink" title="Vector"></a>Vector</h3><p>默认容量10，如果指定增长因子每次就增长那么多，不指定就扩大一倍。</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210808085935627.png" alt="image-20210808085935627"></p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210808090204392.png" alt="image-20210808090204392"></p><p>线程安全的</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210808090411637.png" alt="image-20210808090411637"></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>text</title>
     <link href="/2021/08/17/index/"/>
     <url>/2021/08/17/index/</url>
     
@@ -17,11 +30,11 @@
   
   
   <entry>
-    <title></title>
-    <link href="/2021/08/17/java%E5%9F%BA%E7%A1%80/"/>
-    <url>/2021/08/17/java%E5%9F%BA%E7%A1%80/</url>
+    <title>my-first-blog</title>
+    <link href="/2021/08/17/my-first-blog/"/>
+    <url>/2021/08/17/my-first-blog/</url>
     
-    <content type="html"><![CDATA[<h3 id="BigInteger和BigDecimal"><a href="#BigInteger和BigDecimal" class="headerlink" title="BigInteger和BigDecimal"></a>BigInteger和BigDecimal</h3><p>BigInteger用的整形的数组来保存的这个大数，所以可以保存很大数字。用signum标识位来表示正负号。</p><p>由于mag数组不需要存储负数所以一个integer32位它的存储范围为2^32-1</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210807170956569.png" alt="image-20210807170956569"></p><p>BigDecimal使用bigInteger保存整数部分，int类型的scale保存小数部分，所以精度很高。</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210807171326451.png" alt="image-20210807171326451"></p><h3 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h3><p>默认大小10；</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210807225109574.png" alt="image-20210807225109574"></p><p>每次增长1.5倍</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210807225342256.png" alt="image-20210807225342256"></p><h3 id="Vector"><a href="#Vector" class="headerlink" title="Vector"></a>Vector</h3><p>默认容量10，如果指定增长因子每次就增长那么多，不指定就扩大一倍。</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210808085935627.png" alt="image-20210808085935627"></p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210808090204392.png" alt="image-20210808090204392"></p><p>线程安全的</p><p><img src="https://gitee.com/yang-long-da/picture/raw/master/image-20210808090411637.png" alt="image-20210808090411637"></p>]]></content>
+    <content type="html"><![CDATA[<p>1.在node官网下载安装包：<a href="https://nodejs.org/zh-cn/download/%EF%BC%8C%E5%8D%8E%E4%B8%BA%E4%BA%91%E5%9C%A8%E5%AE%89%E8%A3%85%E4%B8%8B%E8%BD%BDnodejs%E6%97%B6%EF%BC%8C%E4%B8%8B%E8%BD%BDarmv8%E7%9A%84%E5%8C%85">https://nodejs.org/zh-cn/download/，华为云在安装下载nodejs时，下载armv8的包</a><br><img src="https://upload-images.jianshu.io/upload_images/24832719-51e2e4637999ff2f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"><br>2.上传到自己的linux系统里面。<br>3.把安装包移动到/usr/local解压，并且改名，删除安装包。</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">mv</span> node-v<span class="hljs-number">14</span>.<span class="hljs-number">17</span>.<span class="hljs-number">0</span>-linux-arm<span class="hljs-number">64</span>.tar.xz /usr/loca<br><span class="hljs-attribute">cd</span> /usr/local<br><span class="hljs-attribute">tar</span> -xvf node-v<span class="hljs-number">14</span>.<span class="hljs-number">17</span>.<span class="hljs-number">0</span>-linux-arm<span class="hljs-number">64</span>.tar.xz<br><span class="hljs-attribute">mv</span> node-v<span class="hljs-number">14</span>.<span class="hljs-number">17</span>.<span class="hljs-number">0</span>-linux-arm<span class="hljs-number">64</span> nodejs //改名<br><span class="hljs-attribute">rm</span> -rf node-v<span class="hljs-number">14</span>.<span class="hljs-number">17</span>.<span class="hljs-number">0</span>-linux-arm<span class="hljs-number">64</span>.tar.xz //删除安装包<br></code></pre></td></tr></table></figure><p>4.让npm和node命令全局生效</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs awk">ln -s <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/nodejs/</span>bin<span class="hljs-regexp">/npm /u</span>sr<span class="hljs-regexp">/local/</span>bin/<br>ln -s <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/nodejs/</span>bin<span class="hljs-regexp">/node /u</span>sr<span class="hljs-regexp">/local/</span>bin/<br></code></pre></td></tr></table></figure><p>5.查看是否成功</p><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">-v</span><br>npm -v<br></code></pre></td></tr></table></figure><p><img src="https://upload-images.jianshu.io/upload_images/24832719-0a593aef4d8e147a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>]]></content>
     
     
     
